@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doyeon's Portfolio</title>
+  <meta name="description" content="Doyeon's portfolio that wanna be a front-end developer">
+  <meta name="author" content="Doyeon">
+  <link rel="icon" type="image/png" href="images/logo/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/d01e7b9f50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1 class="hidden">Welcome to Do Station</h1>
+  <!-- Navbar-->
+  <nav id="navbar">
+    <div class="navbar__logo"><a href="#"><img src="images/logo/logo.svg" alt="Logo Image"></a></div>
+    <ul class="navbar__menu disNo">
+      <li data-link="#home" class="navbar__menu__item active">Home</li>
+      <li data-link="#about" class="navbar__menu__item">About</li>
+      <li data-link="#skills" class="navbar__menu__item">Skills</li>
+      <li class="navbar__menu__item"><a href="works.html">My work</a></li>
+      <li class="navbar__menu__item"><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Toggle button -->
+    <div class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+
+  <!-- Home -->
+  <section id="home">
+    <div class="home__container">
+      <picture>
+        <soruce media="(max-width: 1200px)" srcset="images/hero_img/home_background1.png">
+        <soruce media="(max-width: 768px)" srcset="images/hero_img/home_background2.png">
+        <img src="images/hero_img/home_background1.png" alt="Contact Page Hero Image">
+      </picture>
+      <div class="home__name disNo"> 
+        <h2>I am Doyeon Kim</h2>
+        <h2>I am Doyeon Kim</h2>
+      </div>
+      <div class="home__socialbox waviy disNo">
+        <span style="--i:1"><a href="https://github.com/Doyeon-k-fanshawe" target="_blank"><i class="fa-brands fa-github"></i></a></span>
+        <span style="--i:2"><a href="https://www.linkedin.com/in/doyeon-k-761345232" target="_blank"><i class="fa-brands fa-linkedin"></i></a></span>
+        <span style="--i:3"><a href="https://www.instagram.com/dy_ssi.k/" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
+      </div>
+      <div class="home__contactbox disNo">
+        <button class="contactbox__contact"><a href="contact.html">CONTACT ME</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello, I'm Doyeon Kim. I want to be a front-end developer. I'm currently learning various tools like HTML, CSS, JS, SASS, and PHP at Fanshawe College. I want to try to build a variety type of websites. </p>
+    <div class="about__majors_section">
+      <div class="about__majors">
+        <div class="major__icon"><i class="fa-solid fa-palette"></i></div>
+        <div class="major__title">Design</div>
+        <div class="major__description">Photoshop, Illustrator</div>
+      </div>
+  
+      <div class="about__majors">
+        <div class="major__icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="major__title">Develop</div>
+        <div class="major__description">HTML, CSS/SASS, JS</div>
+      </div>
+  
+      <div class="about__majors">
+        <div class="major__icon"><i class="fa-solid fa-circle-play"></i></div>
+        <div class="major__title">Motion Design</div>
+        <div class="major__description">Cinema 4D, After Effect</div>
+      </div>  
+    </div>
+
+    <div class="about__jobs">
+      <div class="job">
+        <img src="images/logo/fanshawe-college-logo.svg" alt="Fanshawe College Logo">
+        <div class="job__description">
+          <p class="job__name">Fanshawe College</p>
+          <p class="job__period">2021 ~ Until Now</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section2">
+    <h2 class="hidden">Skiils</h2>
+    <div class="section__container">
+      <h2>Skills</h2>
+      <h3>Skills & Attributes</h3>
+      <div class="skills__para">
+        <p>Passion for learning new technologies. Capable of working within a team environment and independently. <br>
+          Able to plan and time schedule, work unde strict time pressure </p>
+      </div>
+      <div class="skillset">
+        <div class="skillset__left">
+          <!-- <h3 class="skillset__title"></h3> -->
+          <div class="skill">
+            <div class="skill_description">
+              <span>HTML</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill_description">
+              <span>CSS</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill_description">
+              <span>JS</span>
+              <span>65%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 65%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill_description">
+              <span>Design</span>
+              <span>60%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 60%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill_description">
+              <span>Motion Design</span>
+              <span>60%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 60%"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Photoshop</span></li>
+              <li><span>Illustrator</span></li>
+              <li><span>Indesign</span></li>
+              <li><span>After Effect</span></li>
+              <li><span>Cinema 4d</span></li>
+            </ul>
+          </div>
+          <div class="ect">
+            <ul class="ect__list">
+              <li><span>Git</span></li>
+              <!-- <li><span></span></li>
+              <li><span></span></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer" class="section2">
+    <h2 class="hidden">Footer</h2>
+    <div class="footer__title">
+      <div class="waviy2">
+        <h2><a href="contact.html">
+          <span style="--v:1">L</span>
+          <span style="--v:2">e</span>
+          <span style="--v:3">t</span>
+          <span style="--v:4">'</span>
+          <span style="--v:5">s</span>
+          <span style="--v:6"></span>
+          <span style="--v:7"></span>
+          <span style="--v:8">t</span>
+          <span style="--v:9">a</span>
+          <span style="--v:10">l</span>
+          <span style="--v:11">k</span>
+          <span style="--v:12">!</span>
+        </a></h2>
+      </div>
+    </div>
+    <div class="footer__links">
+      <span style="--v:1" class="flipX">
+        <a href="https://github.com/Doyeon-k-fanshawe" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </span>
+
+      <span style="--v:2" class="flipX">
+        <a href="https://www.linkedin.com/in/doyeon-k-761345232" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </span>
+      
+      <span style="--v:3" class="flipX">
+        <a href="https://www.instagram.com/dy_ssi.k/" target="_blank">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+      </span>
+    </div>
+    <p class="footer__rights">
+      2022 Doyeon Kim's Portfolio - All rights reserved
+    </p>
+  </section>
+
+  <!-- Arrow Up -->
+  <button class="arrow-up">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JS Files goes here -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
