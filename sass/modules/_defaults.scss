@@ -1,49 +1,40 @@
-.hidden {
-  display: none;
-}
-
   /* Global */
 :root {
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-light-white: #eeeeee;
-  --color-hot-pink: #FF6863;
-  --color-pink: #FE918D;
-  --color-light-pink: #FDDDE6;
-  --color-purple: #895CE6;
-  --color-lavender: #ef94ff;
-  --color-light-purple: #f3c2f6;
-  --color-light-orange: #FCBFBB;
-  --color-light-yellow: #FBDDC4;
+  --color-yellow: #FFAB24;
+  --color-green: #007F6E;
+  --color-pink: #FF695F;
+  --color-navy: #002A4C;
+  --color-beige: #F6E1CA;
   --color-dark-gray: #4d4d4d;
   --color-gray: #616161;
   --color-light-gray: #7c7979;
   --color-black: #000000;
 
   /* Font size */
-  --font-super-large: 48px;
-  --font-little-large: 37px;
-  --font-large: 28px;
-  --font-medium: 24px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
+  --font-super-large: 30px;
+  --font-large: 26px;
+  --font-medium: 22px;
+  --font-regular: 16px;
+  --font-small: 12px;
+  --font-micro: 11px;
 
   /* Font weight */
   --weight-bold: 700;
-  --weight-semi-bold: 600;
-  --weight-medium: 500;
+  // --weight-semi-bold: 600;
+  // --weight-medium: 500;
   --weight-regular: 400;
-  --weight-light: 300;
-  --weight-extra-light: 200;
+  // --weight-light: 300;
+  // --weight-extra-light: 200;
 
   /* Size */
-  --size-border-radius: 4px;
+
 
   /* Animation */
-  --animation_duration: 300ms;
+
 
 }
 
@@ -54,58 +45,48 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "novecento-sans-wide", sans-serif;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-navy);
+  cursor: pointer;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+  // text-align: center;
 }
 
-.section {
-  padding: 70px 60px;
-  text-align: center;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.section2 {
-  padding: 80px 60px;
-  text-align: center;
-  margin: auto;
+li {
+  list-style: none;
 }
 
 
-.section__container {
-  max-width: 1200px;
-  margin: auto;
+
+.hidden {
+  display: none;
 }
+
+
+
+
+
+
 
 /* Typography */
 
-h2 {
-  font-size: var(--font-little-large);
-  font-weight: var(--weight-semi-bold);
-  color: var(--color-black);
-  margin: 0;
-}
+// h2 {
+  
+// }
 
-h3 {
-  font-size: var(--font-regular);
-  font-weight: var(--weight-regular);
-  color: var(--color-black);
-  margin: 0;
-}
+// h3 {
+  
+// }
 
-p {
-  font-size: var(--font-small);
-  font-weight: var(--weight-light);
-  color: var(--color-black);
-  margin: 0;
-}
+// p {
+
+// }
