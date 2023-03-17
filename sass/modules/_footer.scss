@@ -1,9 +1,11 @@
 #footer {
-  margin: auto;
+  position: absolute;
+  height: 50px;
+  left: 560px;
+  top: 700px;
 }
 
 #footer p {
   color: var(--color-black);
   text-align: center;
-  margin-top: 700px;
 }

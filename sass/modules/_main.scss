@@ -1,0 +1,84 @@
+/* Main Page */
+  #main h2 {
+    // margin: 130px 0 100px 0;
+    position: absolute;
+    height: 43px;
+    left: 171px;
+    top: 95px;
+    line-height: 50px;
+    animation-name: topToBottom, fadeOut;
+    animation-duration: 4s;
+  }
+
+  #main p {
+    line-height: 30px;
+    margin-bottom: 30.5px;
+  }
+
+  #main span {
+    color: var(--color-red);
+    font-weight: var(--weight-bold);
+  }
+
+  .main__bt {
+    position: absolute;
+    height: 160px;
+    left: 171px;
+    top: 290px;
+    animation-name: bottomToTop, fadeOut;
+    animation-duration: 3s;
+  }
+
+  .main__logo {
+    background-color: var(--color-dark-white);
+    width: 525px;
+    height: 160px;
+    margin-bottom: 45px;
+  }
+
+  .main__naver__logo {
+    position: absolute;
+    height: 30px;
+    left: 171px;
+    top: 615px;
+  }
+
+  .main__naver__logo img {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-dark-white);
+  }
+
+  .main__naver__logo small {
+    font-size: var(--font-small);
+    font-weight: var(--weight-regular);
+    margin: 35px 0 0 10px;
+  }
+
+
+  @keyframes topToBottom {
+    from { 
+      top: 0; 
+    }
+    to {
+      top: 95px; 
+    }
+  }
+
+  @keyframes bottomToTop {
+    from { 
+      top: 350px; 
+    }
+    to {
+      top: 290px; 
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 0; 
+    }
+    to { 
+      opacity: 1; 
+    }
+  }
