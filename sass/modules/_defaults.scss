@@ -17,7 +17,7 @@
   --font-regular: 20px;
   --font-regular-small: 15px;
   --font-small: 12px;
-  --font-micro: 11px;
+  --font-micro: 10px;
 
   /* Font weight */
   --weight-black: 900;
@@ -68,12 +68,12 @@ li {
 
 h2 {
   font-size: var(--font-super-large);
-  font-weight: var(--font-bold);
+  font-weight: var(--weight-bold);
 }
 
 h3 {
   font-size: var(--font-medium);
-  font-weight: var(--font-bold);
+  font-weight: var(--weight-bold);
 }
 
 h4 {
@@ -83,6 +83,11 @@ h4 {
 
 h5 {
   font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+}
+
+h6 {
+  font-size: var(--font-regular-small);
   font-weight: var(--weight-bold);
 }
 

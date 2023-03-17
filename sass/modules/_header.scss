@@ -1,0 +1,45 @@
+#section {
+  width: 1300px;
+  height: 960px;
+  margin: auto;
+  padding: 60px 70px;
+}
+
+#navbar {
+  float: right;
+  width: 200px;
+}
+
+#navbar__line {
+  position: relative;
+  width: 0px;
+  height: 100vh;
+  top: -76px;
+  bottom: 0px;
+
+  border: 2px solid var(--color-red);
+}
+
+#navbar__menu {
+  position: relative;
+  width: 164px;
+  height: 46px;
+  left: -20px;
+  top: -880px;
+}
+
+#navbar h6 {
+  color: var(--color-white);
+  background-color: var(--color-red);
+  padding: 20px;
+  border-radius: 25px;
+}
+
+#navbar h6:hover {
+  background-color: var(--color-dark-white);
+  color: var(--color-black);
+}
+
+#navbar li {
+  margin-bottom: 30px;
+}
