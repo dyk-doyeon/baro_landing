@@ -1,0 +1,106 @@
+#service {
+  padding: 0 150px;
+  width: 1250px;
+}
+
+#service h2 {
+  margin-bottom: 30px;
+}
+
+
+// Button
+.service__button {
+  margin-bottom: 45px;
+}
+
+.service__button button {
+  padding: 10px 15px;
+
+  background-color: var(--color-light-red);
+  border-radius: 32px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.service__button button:first-child {
+  background-color: var(--color-red);
+}
+
+.service__button h5 {
+  color: var(--color-white);
+}
+
+
+// Pick up
+.pickup__container {
+  display: block;
+}
+
+.pickup__container h3 {
+  margin-bottom: 15px;
+}
+
+.pickup__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.pickup__box__item {
+  display: flex;
+  flex-direction: row;
+  width: 550px;
+  padding: 15px 30px;
+
+  background-color: var(--color-red);
+  color: var(--color-white);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.pickup__box__item:last-child {
+  background-color: var(--color-light-red);
+}
+
+.pickup__box__item h5 {
+  line-height: 30px;
+}
+
+.pickup__box__item h4 {
+  line-height: 30px;
+}
+
+.pickup__box__item:first-child h4 {
+  margin-left: 125px;
+}
+
+.pickup__box__item:nth-child(2) h4 {
+  margin-left: 110px;
+}
+
+.pickup__box__item:last-child h4 {
+  margin-left: 95px;
+}
+
+// Clean
+.clean__container {
+  display: none;
+}
+
+.clean__container h3 {
+  margin-bottom: 25px;
+}
+
+.clean__box h4 {
+  line-height: 40px;
+}
+
+.clean__list {
+  margin-top: 20px;
+}
+
+.clean__list li {
+  list-style: square;
+  margin: 10px;
+}
