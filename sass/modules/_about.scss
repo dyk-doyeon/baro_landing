@@ -1,0 +1,152 @@
+#logo {
+  padding: 50px 0px 40px 50px;
+}
+
+#about {
+  padding: 0 70px;
+  width: 1200px;
+}
+
+#about h2 {
+  margin-bottom: 35px;
+}
+
+
+// Button
+.about__button {
+  margin-bottom: 5px;
+}
+
+.about__button button {
+  width: 113px;
+  height: 47px;
+
+  background-color: var(--color-light-red);
+  border-radius: 30.5px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.about__button button:first-child {
+  background-color: var(--color-red);
+}
+
+.about__button h5 {
+  color: var(--color-white);
+}
+
+
+// Before
+.service__before {
+  display: flex;
+  flex-direction: column;
+}
+
+.service__before p {
+  margin: 20px 0;
+}
+
+.service__before__up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.before__container {
+  width: 510px;
+  height: 285px;
+  border: 1px solid var(--color-red);
+  border-radius: 33px;
+  padding: 30px 40px;
+  margin-bottom: 20px;
+}
+
+.before__container__up {
+  display: flex;
+  flex-direction: row;
+}
+
+.before__container__up i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.before__container__down {
+  margin-top: 20px;
+  padding-left: 6px;
+}
+
+.before__container__down li {
+  margin-top: 25px;
+  list-style: disc !important;
+  line-height: 30px;
+}
+
+
+// After 
+.service__after {
+  display: none;
+}
+
+.service__after p {
+  margin: 20px 0;
+}
+
+.service__after__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service__after__up {
+  display: flex;
+  flex-direction: column;
+}
+
+.after__container {
+  width: 510px;
+  height: 200px;
+  border: 1px solid var(--color-red);
+  border-radius: 33px;
+  padding: 30px 40px;
+  margin-bottom: 20px;
+}
+
+.service__after__down .after__container {
+  width: 510px;
+  height: 420px;
+  border: 1px solid var(--color-red);
+  border-radius: 33px;
+  padding: 30px 40px;
+  margin-bottom: 20px;
+}
+
+.after__container__up {
+  display: flex;
+  flex-direction: row;
+}
+
+.after__container__up i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.after__container__down {
+  margin-top: 18px;
+  padding-left: 6px;
+}
+
+.after__container__down li {
+  margin-top: 16px;
+  list-style: disc !important;
+  line-height: 30px;
+}
+
+.down__paragraph {
+  margin-top: 50px;
+}
+
+.down__paragraph p {
+  margin-bottom: 20px;
+}
