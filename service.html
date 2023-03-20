@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/css/main.css"/>
+  <script src="https://kit.fontawesome.com/d01e7b9f50.js" crossorigin="anonymous"></script>
+  <title>BARO LANDING</title>
+</head>
+<body>
+  <h1 class="hidden">Welcome to BARO LANDING!</h1>
+  <!-- Navbar goes here-->
+    <nav id="navbar">
+      <div id="navbar__line"></div>
+      <ul id="navbar__menu">
+        <li class="navbar__menu__item"><a href="about.html"><h6>정착 랜딩 알아보기</h6></a></li>
+        <li class="navbar__menu__item"><a href="why.html"><h6>Why BARO?</h6></a></li>
+        <li class="navbar__menu__item"><a href="introduce.html"><h6>회사소개</h6></a></li>
+        <li class="navbar__menu__item selectedNav"><a href="service.html"><h6>부가 서비스</h6></a></li>
+        <li class="navbar__menu__item"><a href="contact.html"><h6>문의하기</h6></a></li>
+        <li><a href=""><img src="/images/kakao_icon.svg" alt="카카오톡 로고"></a></li>
+        <li><a href=""><img src="/images/instagram_icon.svg" alt="인스타그램 로고"></a></li>
+      </ul>
+    </nav>
+
+    <!-- Logo goes here -->
+    <div id="logo">
+      <a href="index.html"><img src="images/" alt="Logo"></a>
+    </div>
+
+    <!-- Main Content goes here -->
+    <section id="service">
+      <h2>부가 서비스</h2>
+      <div class="service__button">
+        <button id="pickup_btn"><h5>픽업 관련 옵션</h5></button>
+        <button id="clean_btn"><h5>청소 관련 옵션</h5></button>
+      </div>
+      <!-- Pickup -->
+      <div class="pickup__container">
+        <h3>픽업 관련 옵션</h3>
+        <div class="pickup__box">
+          <div class="pickup__box__item">
+            <h5>런던공항 픽업</h5>
+            <h4>무료</h4>
+          </div>
+          <div class="pickup__box__item">
+            <h5>토론토 공항 픽업</h5>
+            <h4>팬쇼 학생 본인은 팬쇼 <br>
+              컬리지에서 무료 픽업 서비스<br>
+              제공 (가족 12세미만) <br>
+              CD35 + tax, 12세이상 <br>
+              CD75+ tax 정도<br>
+              (예상 200~220불)
+            </h4>
+          </div>
+          <div class="pickup__box__item">
+            <h5>웨스턴, 팬쇼 학생<br>
+              이사.이민으로 <br>
+              다른 지역에서 <br>
+              오시는 분들 픽업</h5>
+            <h4>한인 픽업 연결 차 한 대당<br>
+              대략 200불 <br>
+              (새벽시간 비용추가)</h4>
+          </div>
+        </div>
+      </div>
+      <!-- Clean -->
+      <div class="clean__container">
+        <h3>청소 관련 옵션</h3>
+        <div class="clean__box">
+          <h4>입주청소는 집 크기에 따라 비용이 달리 책정되며, <br>
+            입주 청소를 원하시면 옵션을 선택함으로써 추가하실 수 있습니다.
+          </h4>
+          <ul class="clean__list">
+            <li><h4>천식. 아토피. 알러지 있으신 분들께 권장합니다.</h4></li>
+            <li><h4>구하신 집에 카펫이 많거나 그 전에 사시던분이 애완동물을 키우셨을 경우에 고려하세요.</h4></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Footer goes here -->
+    <footer id="footer">
+      <p class="marginTop">© BAROlandingservice. All rights reserved.</p>
+    </footer>
+
+<script src="js/service.js" type="module" defer></script>
+</body>
+</html>
