@@ -4,10 +4,14 @@
     position: absolute;
     height: 43px;
     left: 171px;
-    top: 95px;
+    top: 120px;
     line-height: 50px;
     animation-name: topToBottom, fadeOut;
-    animation-duration: 4s;
+    -moz-animation: topToBottom, fadeOut; /* Firefox */
+    -webkit-animation: topToBottom, fadeOut; /* Safari and Chrome */
+    -o-animation: topToBottom, fadeOut; /* Opera */
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
   }
 
   #main p {
@@ -24,9 +28,13 @@
     position: absolute;
     height: 160px;
     left: 171px;
-    top: 290px;
+    top: 310px;
     animation-name: bottomToTop, fadeOut;
+    -moz-animation: bottomToTop, fadeOut; /* Firefox */
+    -webkit-animation: bottomToTop, fadeOut; /* Safari and Chrome */
+    -o-animation: bottomToTop, fadeOut; /* Opera */
     animation-duration: 3s;
+    animation-timing-function: ease-in-out;
   }
 
   .main__logo {
@@ -61,18 +69,68 @@
       top: 0; 
     }
     to {
-      top: 95px; 
+      top: 120px; 
     }
   }
 
-  @keyframes bottomToTop {
+  @-moz-keyframes topToBottom { /* Firefox */
     from { 
-      top: 350px; 
+      top: 0; 
     }
     to {
-      top: 290px; 
+      top: 120px; 
+    }
+}
+@-webkit-keyframes topToBottom { /* Safari and Chrome */
+    from { 
+      top: 0; 
+    }
+    to {
+      top: 120px; 
+    }
+}
+@-o-keyframes topToBottom { /* Opera */
+    from { 
+      top: 0; 
+    }
+    to {
+      top: 120px; 
+    }
+}
+
+  @keyframes bottomToTop {
+    from { 
+      top: 400px; 
+    }
+    to {
+      top: 310px; 
     }
   }
+
+  @-moz-keyframes bottomToTop { /* Firefox */
+    from { 
+      top: 400px; 
+    }
+    to {
+      top: 310px; 
+    }
+}
+@-webkit-keyframes bottomToTop { /* Safari and Chrome */
+    from { 
+      top: 400px; 
+    }
+    to {
+      top: 310px; 
+    }
+}
+@-o-keyframes bottomToTop { /* Opera */
+    from { 
+      top: 400px; 
+    }
+    to {
+      top: 310px; 
+    }
+}
 
   @keyframes fadeOut {
     from {
@@ -82,3 +140,28 @@
       opacity: 1; 
     }
   }
+
+  @-moz-keyframes fadeOut { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeOut { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeOut { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
