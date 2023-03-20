@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/css/main.css"/>
+  <script src="https://kit.fontawesome.com/d01e7b9f50.js" crossorigin="anonymous"></script>
+  <title>BARO LANDING</title>
+</head>
+<body>
+  <h1 class="hidden">Welcome to BARO LANDING!</h1>
+  <!-- Navbar goes here-->
+    <nav id="navbar">
+      <div id="navbar__line"></div>
+      <ul id="navbar__menu">
+        <li class="navbar__menu__item"><a href="about.html"><h6>정착 랜딩 알아보기</h6></a></li>
+        <li class="navbar__menu__item"><a href="why.html"><h6>Why BARO?</h6></a></li>
+        <li class="navbar__menu__item"><a href="introduce.html"><h6>회사소개</h6></a></li>
+        <li class="navbar__menu__item"><a href="service.html"><h6>부가 서비스</h6></a></li>
+        <li class="navbar__menu__item selectedNav"><a href="contact.html"><h6>문의하기</h6></a></li>
+        <li><a href=""><img src="/images/kakao_icon.svg" alt="카카오톡 로고"></a></li>
+        <li><a href=""><img src="/images/instagram_icon.svg" alt="인스타그램 로고"></a></li>
+      </ul>
+    </nav>
+
+    <!-- Logo goes here -->
+    <div id="logo">
+      <a href="index.html"><img src="images/" alt="Logo"></a>
+    </div>
+
+    <!-- Main Content goes here -->
+    <section id="contact">
+      <h2>상담 신청</h2>
+      <h4>BARO 랜딩 서비스 에 방문해주셔서 감사합니다.<br>
+        아래 항목을 기재하여 전송해 주시면 담당자가 빠른 시간 안에 답변해드리겠습니다.</h4>
+      <p>* 1회 무료상담 (카톡, 전화, 이메일 포함)<br>
+        * 상담 후 개별적 랜딩서비스 상세 내역을 보내드립니다. </p>
+
+        <!-- Contact Box -->
+      <div class="contact__container">
+        <div class="contact__box__first">
+          <div class="contact__box__first__item">
+            <label>이름</label>
+            <input type="text" name="name">
+          </div>
+          <div class="contact__box__first__item">
+            <label>전화번호</label>
+            <input type="text" name="phone">
+          </div>
+          <div class="contact__box__first__item">
+            <label>이메일</label>
+            <input type="text" name="email">
+          </div>
+        </div>
+        <div class="contact__box__second">
+          <label>희망 시기</label>
+          <input type="text" name="date" placeholder="****년 **월 **일 형식으로 입력해 주세요.">
+        </div>
+        <div class="contact__box__last">
+          <label>상담 내용</label>
+          <input type="text" name="content">
+        </div>
+        <div class="submitBtn">
+          <button class="contactBtn"><h4>무료 상담 신청</h4></button>
+        </div>
+      </div>
+
+      <!-- Poster -->
+      <div class="baro__poster">
+        <img src="" alt="포스터">
+      </div>
+    </section>
+  
+    <!-- Footer goes here -->
+    <footer id="footer">
+      <p>© BAROlandingservice. All rights reserved.</p>
+    </footer>
+
+<script src="js/contact.js" type="module" defer></script>
+</body>
+</html>
