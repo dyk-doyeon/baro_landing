@@ -4,7 +4,7 @@
 }
 
 #navbar__line {
-  position: absolute;
+  position: fixed;
   width: 0px;
   height: 100vh;
   left: 1248.5px;
@@ -14,11 +14,13 @@
 }
 
 #navbar__menu {
-  position: absolute;
+  position: fixed;
   width: 164px;
   height: 46px;
   left: 1224px;
   top: 80px;
+
+  cursor: pointer;
 }
 
 #navbar__menu img {
@@ -36,6 +38,15 @@
 
 #navbar h6:hover {
   background-color: var(--color-dark-white);
+  color: var(--color-black);
+}
+
+.selectedNav h6 {
+  background-color: var(--color-black) !important;
+}
+
+.selectedNav h6:hover {
+  background-color: var(--color-dark-white) !important;
   color: var(--color-black);
 }
 
