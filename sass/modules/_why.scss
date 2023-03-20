@@ -1,0 +1,96 @@
+#why {
+  padding: 0 120px;
+  width: 1200px;
+}
+
+#why h2 {
+  margin-bottom: 35px;
+}
+
+
+// Button
+.why__button {
+  margin-bottom: 5px;
+}
+
+.why__button button {
+  padding: 10px 15px;
+
+  background-color: var(--color-light-red);
+  border-radius: 30.5px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.why__button button:first-child {
+  background-color: var(--color-red);
+}
+
+.why__button h5 {
+  color: var(--color-white);
+}
+
+// Review
+.review__container {
+  display: block;
+}
+
+.review__container h3 {
+  margin-bottom: 30px;
+}
+
+.review__container__items {
+  background-color: var(--color-light-red);
+  padding: 30px 40px;
+  width: 800px;
+  border-radius: 33px;
+  margin-bottom: 20px;
+}
+
+.review__container__items h5 {
+  margin-bottom: 20px;
+}
+
+.review__container__items p {
+  line-height: 40px;
+}
+
+// Advantages
+.pros__container {
+  display: none;
+}
+
+.pros__container h3 {
+  margin-bottom: 70px;
+}
+
+.pros__container__item p {
+  line-height: 35px;
+}
+
+.pros__container__item__up {
+  display: flex;
+  flex-direction: row;
+}
+
+.pros__container__item__up img {
+  width: 70px;
+  position: relative;
+  top: -50px;
+  left: 15px;
+}
+
+.pros__container__item__up h3 {
+  font-size: 30px !important;
+  margin-bottom: 20px !important;
+}
+
+.pros__container__item__up span {
+  color: var(--color-yellow);
+}
+
+.marginTop {
+  margin-top: 0px;
+}
