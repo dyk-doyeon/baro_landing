@@ -38,10 +38,15 @@
   }
 
   .main__logo {
-    background-color: var(--color-dark-white);
+    // background-color: var(--color-dark-white);
     width: 525px;
     height: 160px;
     margin-bottom: 45px;
+  }
+
+  .main__logo img {
+    width: 525px;
+    // height: 160px;
   }
 
   .main__naver__logo {
