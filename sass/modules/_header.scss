@@ -32,7 +32,7 @@
 #navbar h6 {
   color: var(--color-white);
   background-color: var(--color-red);
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 25px;
 }
 
@@ -54,3 +54,10 @@
   margin-bottom: 30px;
 }
 
+#navbar__tablet {
+  display: none;
+}
+
+.navBtn {
+  display: none;
+}
