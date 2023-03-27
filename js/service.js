@@ -34,6 +34,7 @@
   function openTabletNav() {
     navTabletContent.style.display = "block";
     originalNav.style.display = "none";
+    window.scrollTo({top: 0, behavior: 'smooth'});
   }
 
   function closeTabletNav() {
