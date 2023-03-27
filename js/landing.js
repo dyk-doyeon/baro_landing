@@ -16,5 +16,5 @@
   }
   
   openButton.addEventListener("click", openTabletNav);
-  closeButton.addEventListener("click", closeTabletNav)
+  closeButton.addEventListener("click", closeTabletNav);
 })()
