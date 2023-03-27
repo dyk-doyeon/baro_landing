@@ -85,23 +85,23 @@
     to {
       top: 120px; 
     }
-}
-@-webkit-keyframes topToBottom { /* Safari and Chrome */
+  }
+  @-webkit-keyframes topToBottom { /* Safari and Chrome */
     from { 
       top: 0; 
     }
     to {
       top: 120px; 
     }
-}
-@-o-keyframes topToBottom { /* Opera */
+  }
+  @-o-keyframes topToBottom { /* Opera */
     from { 
       top: 0; 
     }
     to {
       top: 120px; 
     }
-}
+  }
 
   @keyframes bottomToTop {
     from { 
