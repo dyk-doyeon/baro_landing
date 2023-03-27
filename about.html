@@ -7,25 +7,49 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="/css/main.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
   <script src="https://kit.fontawesome.com/d01e7b9f50.js" crossorigin="anonymous"></script>
   <title>BARO LANDING</title>
 </head>
 <body>
   <h1 class="hidden">Welcome to BARO LANDING!</h1>
   <!-- Navbar goes here-->
-    <nav id="navbar">
-      <div id="navbar__line"></div>
-      <ul id="navbar__menu">
-        <li class="navbar__menu__item selectedNav"><a href="about.html"><h6>정착 랜딩 알아보기</h6></a></li>
-        <li class="navbar__menu__item"><a href="why.html"><h6>Why BARO?</h6></a></li>
-        <li class="navbar__menu__item"><a href="introduce.html"><h6>회사소개</h6></a></li>
-        <li class="navbar__menu__item"><a href="service.html"><h6>부가 서비스</h6></a></li>
-        <li class="navbar__menu__item"><a href="contact.html"><h6>문의하기</h6></a></li>
-        <li><a href=""><img src="/images/kakao_icon.svg" alt="카카오톡 로고"></a></li>
-        <li><a href=""><img src="/images/instagram_icon.svg" alt="인스타그램 로고"></a></li>
-      </ul>
-    </nav>
+  <nav id="navbar">
+    <div id="navbar__line"></div>
+    <ul id="navbar__menu">
+      <li class="navbar__menu__item"><a href="about.html"><h6>정착 랜딩 알아보기</h6></a></li>
+      <li class="navbar__menu__item"><a href="why.html"><h6>Why BARO?</h6></a></li>
+      <li class="navbar__menu__item"><a href="introduce.html"><h6>회사소개</h6></a></li>
+      <li class="navbar__menu__item"><a href="service.html"><h6>부가 서비스</h6></a></li>
+      <li class="navbar__menu__item"><a href="contact.html"><h6>문의하기</h6></a></li>
+      <li><a href=""><img src="images/kakao_icon.svg" alt="카카오톡 로고"></a></li>
+      <li><a href=""><img src="images/instagram_icon.svg" alt="인스타그램 로고"></a></li>
+    </ul>
+  </nav>
+
+  <!-- tablet version -->
+  <div class="navBtn">
+    <p>더 많은 정보를 위해 화살표를 클릭 해주세요.</p>
+    <i class="fa-solid fa-angles-down openBtn"></i>
+  </div>
+  <nav id="navbar__tablet">
+    <ul id="navbar__menu__tablet">
+      <li class="navbar__tablet__item"><a href="index.html"><img src="images/white_logo.png" alt="네비게이션 로고"></a></li>
+      <li class="navbar__tablet__item"><a href="about.html"><h3>정착 랜딩 알아보기</h3></a></li>
+      <li class="navbar__tablet__item"><a href="why.html"><h3>Why BARO?</h3></a></li>
+      <li class="navbar__tablet__item"><a href="introduce.html"><h3>회사소개</h3></a></li>
+      <li class="navbar__tablet__item"><a href="service.html"><h3>부가 서비스</h3></a></li>
+      <li class="navbar__tablet__item"><a href="contact.html"><h3>문의하기</h3></a></li>
+      <div class="tablet__social">
+        <a href=""><img src="images/kakao_icon.svg" alt="카카오톡 로고"></a>
+        <a href=""><img src="images/instagram_icon.svg" alt="인스타그램 로고"></a>
+      </div>
+      <div class="closebtnCon">
+        <i class="fa-solid fa-chevron-up closeBtn"></i>
+        <p>홈페이지로 돌아가기</p>
+      </div>
+    </ul>
+  </nav>
 
     <!-- Logo goes here -->
     <div id="logo">
@@ -93,6 +117,21 @@
               <ol class="after__container__down">
                 <li>가구 및 가전제품 구입시 동행</li>
                 <li>식료품 구매 동행 (2회)</li>
+              </ol>
+            </div>
+            <div class="after__container after__tablet">
+              <div class="after__container__up">
+                <i class="fa-solid fa-file-invoice"></i>
+                <h5>각종 관공서 및 서류 관련 서비스 등</h5>
+              </div>
+              <ol class="after__container__down">
+                <li>은행 계좌 계설</li>
+                <li>SIN 신청 (Working Permit 소시자에 한함)</li>
+                <li>의료보험 신청 (필요시)</li>
+                <li>운전 면허증 교환 시 동행</li>
+                <li>휴대전화 신청</li>
+                <li>교육청 및 학교 관련 업부</li>
+                <li>교복 및 학용품 구매</li>
               </ol>
             </div>
             <div class="after__container">

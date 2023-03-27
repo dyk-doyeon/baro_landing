@@ -50,6 +50,7 @@
     font-size: 30px;
     text-align: center;
     color: var(--color-white);
+    z-index: 100;
   }
 
   .navBtn i {
@@ -65,7 +66,7 @@
   #navbar__tablet {
     display: none;
     background-color: var(--color-red);
-    height: 90vh;
+    height: 900px;
   }
 
   .navbar__menu__tablet {
@@ -185,5 +186,104 @@
     position: static;
     margin-top: 80px;
   }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  // Logo 
+  #logo {
+    padding: 150px 0px 60px 70px;
+  }
+
+  // About
+  #about {
+    width: 1000px;
+  }
+
+  .service__before__up {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .before__container:nth-child(2) {
+    height: 200px;
+  }
+
+  .service__before p {
+    margin: 30px 0;
+  }
+
+  .service__after p {
+    margin: 35px 0;
+  }
+
+  .service__after__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service__after__down__tablet {
+    display: block;
+  }
+
+  .service__after__down {
+    display: none;
+  }
+
+  .after__tablet {
+    display: block;
+  }
+
+  .after__container:nth-child(2) {
+    height: 420px;
+  }
+
+  .after__container:last-child {
+    height: 150px;
+  }
+
+  .down__paragraph p {
+    margin-bottom: 40px;
+  }
+
+  // Why
+  #why {
+    padding: 0 70px;
+    width: 1000px;
+  }
+
+  .why__button {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+  }
+
+  .pros__container h3 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+  
+
+  .pros__container__item p {
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .pros__container__item__up {
+    height: 100px;
+  }
+
+  .pros__container__item__up img {
+    width: 70px;
+    position: relative;
+    top: -90px;
+    left: -150px;
+  }
+
 
 }
