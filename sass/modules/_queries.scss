@@ -125,7 +125,7 @@
   // main
   #main h2 {
     position: absolute;
-    left: 25%;
+    left: 28%;
     top: 50px;
     text-align: center;
     margin-top: 120px;
@@ -139,9 +139,18 @@
 
   }
 
+  .tabletDisno {
+    display: none;
+  }
+
+  #main p:last-child {
+    display: block;
+    width: 510px;
+  }
+
   .main__bt {
     position: absolute;
-    left: 25%;
+    left: 30%;
     top: 150px;
 
     animation-name: bottomToTopTB, fadeOut;
@@ -176,7 +185,7 @@
   .main__tablet__naver {
     display: flex;
     flex-direction: column;
-    padding-top: 680px;
+    padding-top: 720px;
     margin: auto;
   }
 
@@ -297,6 +306,15 @@
 
 
 @media screen and (max-width: 1100px) {
+  // Landing
+  #main h2 {
+    left: 23%;
+  }
+
+  .main__bt {
+    left: 25%;
+  }
+
   // Logo 
   #logo {
     padding: 150px 0px 60px 70px;
@@ -396,7 +414,7 @@
   }
 
   .main__bt {
-    left: 20%;
+    left: 23%;
   }
 
   // Why
@@ -489,11 +507,11 @@
 
 @media screen and (max-width: 900px) {
   #main h2 {
-    left: 16%;
+    left: 18%;
   }
 
   .main__bt {
-    left: 16%;
+    left: 20%;
   }
 
   #why {
@@ -516,11 +534,11 @@
 
 @media screen and (max-width: 800px) {
   #main h2 {
-    left: 12%;
+    left: 15%;
   }
 
   .main__bt {
-    left: 12%;
+    left: 18%;
   }
 
   #why {
@@ -539,9 +557,22 @@
     width: 500px;
   }
 
+  // Service
+  #service {
+    padding: 0 70px;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
+  #main h2 {
+    left: 9%;
+  }
+
+  .main__bt {
+    left: 12%;
+  }
+
   #why {
     width: 700px;
   }
@@ -565,3 +596,627 @@
 }
 
 /* Mobile */
+
+@media screen and (max-width: 650px) {
+  // Landing
+  #main {
+    width: 650px;
+  }
+
+  #main h2 {
+    font-size: var(--font-regular);
+    left: 25%;
+  }
+
+  .main__bt {
+    left: 20%;
+  }
+
+  .main__logo img {
+    width: 400px;
+  }
+
+  #main p:last-child {
+    width: 385px;
+    font-size: var(--font-regular-small);
+    margin: 0;
+  }
+
+  // Logo
+  #logo {
+    padding: 150px 0px 20px 40px;
+  }
+
+  // About
+  #about {
+    width: 650px;
+    padding: 40px;
+  }
+
+  .about__button {
+    text-align: center;
+  }
+
+  .service__before {
+    text-align: center;
+  }
+
+  .before__container {
+    width: 100%;
+  }
+
+  // .before__container__up {
+  //   justify-content: center;
+  // }
+
+  .down__paragraph {
+    text-align: center;
+  }
+
+  .service__after {
+    text-align: center;
+  }
+
+  .after__container {
+    width: 100%;
+  }
+
+  // Why
+  #why {
+    width: 650px;
+    padding: 40px;
+  }
+
+  .pros__container__item__up img {
+    left: -220px;
+  }
+
+  .pros__container__item__up h3 {
+    position: relative;
+    top: 15px;
+    left: 10%;
+  }
+
+  // Introduce
+  #introduce {
+    width: 650px;
+    padding: 40px;
+  }
+
+  // Service
+  #service {
+    width: 650px;
+    padding: 40px;
+  }
+
+  .service__button {
+    text-align: center;
+  }
+
+  // Contact 
+  #contact {
+    width: 650px;
+    padding: 40px;
+  }
+
+  #contact h4 {
+    width: 380px;
+  }
+
+  .mobileDisNo {
+    display: none;
+  }
+
+  .mobileDisYes {
+    display: block;
+  }
+
+  .contact__container {
+    width: 550px;
+  }
+
+  .contact__box__first__item input {
+    width: 250px;
+  }
+
+  .contactBtn h4 {
+    width: 115px !important;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // Landing 
+  #main {
+    width: 600px;
+  }
+
+  #main h2 {
+    left: 22%;
+  }
+
+  .main__bt {
+    left: 18%;
+  }
+
+
+  // About
+  #about {
+    width: 600px;
+  }
+
+  .down__paragraph {
+    line-height: 30px;
+  }
+
+  .before__container {
+    height: 100%;
+  }
+
+  // Why
+  #why {
+    width: 600px;
+  }
+
+  .why__button {
+    width: 300px;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .why__button button {
+    margin: 15px 0;
+  }
+
+  .pros__container__item__up h3 { 
+    font-size: var(--font-regular) !important;
+  }
+
+  .pros__container__item p {
+    font-size: var(--font-regular) !important;
+  }
+
+  // Introduce
+  #introduce {
+    width: 600px;
+  }
+
+  // Service
+  #service {
+    width: 600px;
+  }
+
+  .pickup__box__item {
+    width: 100%;
+  }
+
+  .clean__box {
+    width: 100%;
+  }
+
+  // Contact 
+  #contact {
+    width: 600px;
+  }
+  .contact__box__first {
+    flex-direction: column;
+  }
+
+  #contact input {
+    width: 80%;
+  }
+
+  .submitBtn {
+    text-align: center;
+  }
+
+  // Footer 
+  #chat {
+    right: 20px;
+    bottom: 50px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  // Landing 
+  #main {
+    width: 550px;
+  }
+
+  #main h2 {
+    left: 20%;
+  }
+
+  .main__bt {
+    left: 16%;
+  }
+
+  // About
+  #about {
+    width: 550px;
+  }
+
+  // Why
+  #why {
+    width: 550px;
+  }
+
+  // Introduce
+  #introduce {
+    width: 550px;
+  }
+
+  #introduce h3 {
+    font-size: var(--font-regular);
+  }
+
+  // Service
+  #service {
+    width: 550px;
+  }
+
+  .pickup__box__item {
+    flex-direction: column;
+  }
+  
+  .pickup__box__item:first-child h4 {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .pickup__box__item:nth-child(2) h4 {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .pickup__box__item:last-child h4 {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  // Contact 
+  #contact {
+    width: 550px;
+  }
+
+  .contact__container {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  // Landing 
+  #main {
+    width: 500px;
+  }
+
+  #main h2 {
+    left: 17%;
+  }
+
+  .main__bt {
+    left: 13%;
+  }
+
+  // About
+  #about {
+    width: 500px;
+  }
+
+  .after__container:nth-child(2) {
+    height: 100%;
+  }
+
+  .after__container {
+    height: 100%;
+  }
+
+  // Why
+  #why {
+    width: 500px;
+  }
+
+  .pros__container__item__up h3 {
+    line-height: 25px;
+  }
+
+  .pros__container__item__up img {
+    left: -150px;
+  }
+
+  // Introduce
+  #introduce {
+    width: 500px;
+  }
+
+  // Service
+  #service {
+    width: 500px;
+  }
+
+  // Contact 
+  #contact {
+    width: 500px;
+  }
+
+  .contact__container {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  // Landing 
+  #main {
+    width: 450px;
+  }
+
+  #main h2 {
+    left: 15%;
+  }
+
+  .main__bt {
+    left: 18%;
+  }
+
+  .main__logo img {
+    width: 300px;
+  }
+
+  .main__bt p {
+    padding-top: 20px;
+  }
+
+  #main p:last-child {
+    width: 300px;
+    font-size: var(--font-regular-small);
+    margin: 0;
+  }
+
+  .main__tablet__naver button {
+    width: 50%;
+  }
+
+  .main__tablet__naver h4 {
+    font-size: var(--font-regular-small);
+  }
+
+  // About
+  #about {
+    width: 450px;
+  }
+
+  // Why
+  #why {
+    width: 450px;
+  }
+
+  // Introduce
+  #introduce {
+    width: 450px;
+  }
+
+  .lim__container img {
+    width: 250px;
+  }
+
+  .park__container img {
+    width: 250px;
+  }
+
+  .lim__container h4 {
+    width: 320px;
+  }
+
+  .park__container h4 {
+    width: 320px;
+  }
+
+  // Service
+  #service {
+    width: 450px;
+  }
+
+  // Contact 
+  #contact {
+    width: 450px;
+  }
+
+  .contact__container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  // Landing 
+  #main {
+    width: 400px;
+  }
+
+  #main h2 {
+    left: 10%;
+  }
+
+  .main__bt {
+    left: 13%;
+  }
+
+  // About
+  #about {
+    width: 400px;
+  }
+
+  .before__container:nth-child(2) {
+    height: 100%;
+  }
+
+  .after__container:last-child {
+    height: 100%;
+  }
+
+  // Why
+  #why {
+    width: 400px;
+  }
+
+  .pros__container__item__up img {
+    left: -120px;
+  }
+
+  // Introduce
+  #introduce {
+    width: 400px;
+  }
+
+  // Service
+  #service {
+    width: 400px;
+  }
+
+  // Contact 
+  #contact {
+    width: 400px;
+  }
+
+  #contact h4 {
+    font-size: var(--font-regular-small) !important;
+  }
+
+  .contact__container {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  // Landing 
+  #main {
+    width: 350px;
+  }
+
+  #main h2 {
+    left: 2%;
+  }
+
+  .main__bt {
+    left: 7%;
+  }
+
+  // About
+  #about {
+    width: 350px;
+  }
+
+  // Why
+  #why {
+    width: 350px;
+  }
+
+  #why h2 {
+    line-height: 45px;
+  }
+
+  .why__button {
+    width: 200px;
+  }
+
+  // Introduce
+  #introduce {
+    width: 350px;
+  }
+
+  #lim_btn {
+    margin-bottom: 12px;
+  }
+
+  .lim__container h4 {
+    width: 250px;
+    font-size: var(--font-small);
+  }
+
+  .park__container h4 {
+    width: 250px;
+    font-size: var(--font-small);
+  }
+
+  // Service
+  #service {
+    width: 350px;
+  }
+
+  #pickup_btn {
+    margin-bottom: 12px;
+  }
+
+  // Contact 
+  #contact {
+    width: 350px;
+  }
+
+  .contact__container {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  // Landing 
+  #main {
+    width: 300px;
+  }
+
+  #main h2 {
+    left: 0%;
+  }
+
+  .main__bt {
+    left: 7%;
+  }
+
+  .main__logo img {
+    width: 250px;
+  }
+
+  #main p:last-child {
+    width: 250px;
+  }
+
+  // About
+  #about {
+    width: 300px;
+  }
+
+  #before_btn {
+    margin-bottom: 12px;
+  }
+
+  // Why
+  #why {
+    width: 300px;
+  }
+
+  .pros__container__item__up img {
+    left: -80px;
+  }
+
+  // Introduce
+  #introduce {
+    width: 300px;
+  }
+
+  // Service
+  #service {
+    width: 300px;
+  }
+
+  // Contact 
+  #contact {
+    width: 300px;
+  }
+
+  #contact h4 {
+    width: 200px;
+  }
+
+  .contact__container {
+    width: 250px;
+  }
+}
