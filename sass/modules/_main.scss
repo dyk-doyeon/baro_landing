@@ -17,6 +17,15 @@
   #main p {
     line-height: 30px;
     margin-bottom: 30.5px;
+    width: 460px;
+  }
+  
+  .tabletDisno {
+    display: block;
+  }
+
+  #main p:last-child {
+    display: none;
   }
 
   #main span {
