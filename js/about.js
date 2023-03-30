@@ -29,13 +29,13 @@
         originalNav = document.querySelector(".navBtn");
 
   function openTabletNav() {
-    navTabletContent.style.display = "block";
+    navTabletContent.classList.add("open");
     originalNav.style.display = "none";
     window.scrollTo({top: 0, behavior: 'smooth'});
   }
 
   function closeTabletNav() {
-    navTabletContent.style.display = "none";
+    navTabletContent.classList.remove("open");
     originalNav.style.display = "block";
   }
   

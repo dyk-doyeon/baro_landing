@@ -37,6 +37,8 @@
     display: none;
   }
 
+  
+
   .navBtn {
     display: block;
     width: 100%;
@@ -65,9 +67,58 @@
   }
 
   #navbar__tablet {
+    position: absolute;
+    top: 0;
+    width: 100%;
     display: none;
     background-color: var(--color-red);
     height: 900px;
+  }
+
+  #navbar__tablet.open {
+    display: block;
+
+    animation-name: navToptoBt, fadeOut;
+    -moz-animation: navToptoBt, fadeOut; /* Firefox */
+    -webkit-animation: navToptoBt, fadeOut; /* Safari and Chrome */
+    -o-animation: navToptoBt, fadeOut; /* Opera */
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+  }
+
+
+  @keyframes navToptoBt {
+    from { 
+      top: -80%; 
+    }
+    to {
+      top: 0%; 
+    }
+  }
+
+  @-moz-keyframes navToptoBt { /* Firefox */
+    from { 
+      top: -80%; 
+    }
+    to {
+      top: 0%; 
+    }
+  }
+  @-webkit-keyframes navToptoBt { /* Safari and Chrome */
+    from { 
+      top: -80%; 
+    }
+    to {
+      top: 0%; 
+    }
+  }
+  @-o-keyframes navToptoBt { /* Opera */
+    from { 
+      top: -80%; 
+    }
+    to {
+      top: 0%; 
+    }
   }
 
   .navbar__menu__tablet {
