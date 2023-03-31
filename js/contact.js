@@ -1,3 +1,6 @@
+import { SendMail } from "./components/mailer.js";
+
+
 (() => {
   const contactBtn = document.querySelector(".contactBtn");
 
@@ -7,7 +10,6 @@
     setTimeout(function(){
       contactBtn.classList.remove("btnAnimation");
     }, 4000);
-
   };
 
   contactBtn.addEventListener("click", changeBg);
@@ -33,58 +35,44 @@
   closeButton.addEventListener("click", closeTabletNav);
 
 
+
+
   const { createApp } = Vue
 
   createApp({
     data() {
       return {
-        name: '',
-        phone: '',
-        email: '',
-        date: '',
-        content: ''
+        message: "Hello"
       }
     },
 
     methods: {
-      tryLogIn() {
-        if(this.name.trim().length == 0) {
-          console.log('name is empty, mark the field and let the user know');
-          this.$refs['name'].classList.add('missing-field');
-          return;
-        } else if (this.phone.trim().length == 0) {
-          console.log('phone number is empty, mark the field and let the user know');
-          this.$refs['phone'].classList.add('missing-field');
-          return;
-        } else if (this.email.trim().length == 0) {
-          console.log('email is empty, mark the field and let the user know');
-          this.$refs['email'].classList.add('missing-field');
-          return;
-        } else if (this.date.trim().length == 0) {
-          console.log('date number is empty, mark the field and let the user know');
-          this.$refs['date'].classList.add('missing-field');
-          return;
-        } else if (this.content.trim().length > 0) {
-          console.log('content is empty, mark the field and let the user know');
-          this.$refs['content'].classList.add('missing-field');
-          return;
-        } else if(this.name.trim().length > 0) {
-          this.$refs['username'].classList.remove('missing-field');
-          return;
-        } else if (this.phone.trim().length > 0) {
-          this.$refs['phone'].classList.remove('missing-field');
-          return;
-        } else if (this.email.trim().length > 0) {
-          this.$refs['email'].classList.remove('missing-field');
-          return;
-        } else if (this.date.trim().length > 0) {
-          this.$refs['date'].classList.remove('missing-field');
-          return;
-        } else if (this.content.trim().length > 0) {
-          this.$refs['content'].classList.remove('missing-field');
-          return;
-        }
+      processMailSuccess(result) {
+        let successText = document.querySelector(".success__text");
+
+        successText.classList.add("show");
+
+        setTimeout(function() {
+          successText.classList.remove("show");
+        }, 5000);
+      },
+
+      processMailFailure(result) {
+        let errorText = document.querySelector(".error__text");
+
+        errorText.classList.add("show");
+
+        setTimeout(function() {
+          errorText.classList.remove("show");
+        }, 5000);
+      },
+
+      processMail(event) {        
+        // use the SendMail component to process mail
+        SendMail(this.$el.parentNode)
+          .then(data => this.processMailSuccess(data))
+          .catch(err => this.processMailFailure(err));
+        },
       }
-    }
-  }).mount('#app')
-})()
+    }).mount('#mail-form')
+})();

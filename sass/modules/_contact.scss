@@ -38,9 +38,13 @@
   margin-bottom: 25px;
 }
 
-.contact__container input.missing-field {
-  border: 2px solid var(--color-red);
-  opacity: 0.5;
+.contact__container input:invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+.contact__container input:focus:invalid {
+  outline: none;
 }
 
 .contact__box__first {
@@ -126,7 +130,36 @@
   transition: all 0.3s ease-in;
 }
 
-.missing-field__text {
+.success__text {
+  display: none;
+  margin-top: 20px;
+  animation-name: fadeOut;
+    -moz-animation: fadeOut; /* Firefox */
+    -webkit-animation: fadeOut; /* Safari and Chrome */
+    -o-animation: fadeOut; /* Opera */
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    color: var(--color-red);
+}
+
+.error__text {
+  display: none;
+  margin-top: 20px;
+  animation-name: fadeOut;
+    -moz-animation: fadeOut; /* Firefox */
+    -webkit-animation: fadeOut; /* Safari and Chrome */
+    -o-animation: fadeOut; /* Opera */
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
   color: var(--color-red);
-  text-transform: uppercase;
+}
+
+
+.success__text.show {
+  display: block;
+}
+
+.error__text.show {
+  display: block; 
 }
