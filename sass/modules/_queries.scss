@@ -8,6 +8,11 @@
     left: 1114px;
   }
 
+  .transBox {
+    position: fixed;
+    right: 40px;
+  }
+
   // Main
   #main h2 {
     height: 43px;
@@ -37,7 +42,11 @@
     display: none;
   }
 
-  
+  #logo {
+    padding: 180px 0px 60px 70px;
+  }
+
+
 
   .navBtn {
     display: block;
