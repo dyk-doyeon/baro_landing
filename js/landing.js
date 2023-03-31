@@ -5,7 +5,8 @@
         closeButton = document.querySelector(".closeBtn"),
         originalNav = document.querySelector(".navBtn"),
         footer = document.querySelector("#footer__landing"),
-        mainText = document.querySelector(".notshowing");
+        mainText = document.querySelector(".notshowing"),
+        transBox = document.querySelector(".transBox");
 
   function openTabletNav() {
     navTabletContent.classList.add("open");
@@ -13,6 +14,7 @@
     window.scrollTo({top: 0, behavior: 'smooth'});
     mainText.style.display = "none";
     footer.style.display = "none";
+    transBox.style.display = "none";
   }
 
   function closeTabletNav() {
@@ -20,6 +22,7 @@
     originalNav.style.display = "block";
     mainText.style.display = "block";
     footer.style.display = "block";
+    transBox.style.display = "block";
   }
   
   openButton.addEventListener("click", openTabletNav);
