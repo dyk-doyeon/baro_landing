@@ -10,7 +10,7 @@
 
   .transBox {
     position: fixed;
-    right: 40px;
+    left: 1120px;
   }
 
   // Main
@@ -45,8 +45,6 @@
   #logo {
     padding: 180px 0px 60px 70px;
   }
-
-
 
   .navBtn {
     display: block;
@@ -93,6 +91,12 @@
     -o-animation: navToptoBt, fadeOut; /* Opera */
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
+  }
+
+  .transBox {
+    position: fixed;
+    left: auto;
+    right: 20px;
   }
 
 
@@ -653,6 +657,12 @@
     width: 400px;
   }
 
+
+  .transBox {
+    position: fixed;
+    top: 110px;
+    right: 20px;
+  }
 }
 
 /* Mobile */
@@ -1084,7 +1094,9 @@
 
   .contact__container {
     width: 400px;
+    right: 10px !important;
   }
+
 }
 
 @media screen and (max-width: 400px) {

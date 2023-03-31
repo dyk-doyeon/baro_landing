@@ -26,17 +26,20 @@
   const openButton = document.querySelector(".openBtn"),
         navTabletContent = document.querySelector("#navbar__tablet"),
         closeButton = document.querySelector(".closeBtn"),
-        originalNav = document.querySelector(".navBtn");
+        originalNav = document.querySelector(".navBtn"),
+        transBox = document.querySelector(".transBox");
 
   function openTabletNav() {
     navTabletContent.classList.add("open");
     originalNav.style.display = "none";
     window.scrollTo({top: 0, behavior: 'smooth'});
+    transBox.style.display = "none";
   }
 
   function closeTabletNav() {
     navTabletContent.classList.remove("open");
     originalNav.style.display = "block";
+    transBox.style.display = "block";
   }
   
   openButton.addEventListener("click", openTabletNav);

@@ -13,6 +13,15 @@
   border: 2px solid var(--color-red);
 }
 
+.transBox {
+  display: block;
+  position: fixed;
+  left: 1235px;
+  top: 30px;
+  z-index: 200;
+}
+
+
 #navbar__menu {
   position: fixed;
   width: 164px;
@@ -59,10 +68,4 @@
 
 .navBtn {
   display: none;
-}
-
-.transBox {
-  position: fixed;
-  right: 120px;
-  top: 30px;
 }
