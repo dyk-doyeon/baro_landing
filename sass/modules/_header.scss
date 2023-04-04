@@ -16,7 +16,7 @@
 .transBox {
   display: block;
   position: fixed;
-  left: 1235px;
+  left: 1175px;
   top: 30px;
   z-index: 200;
 }
@@ -26,15 +26,16 @@
   position: fixed;
   width: 164px;
   height: 46px;
-  left: 1224px;
+  left: 1168px;
   top: 100px;
 
   cursor: pointer;
 }
 
 #navbar__menu img {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
+  margin-left: 60px;
 }
 
 #navbar h6 {
@@ -45,8 +46,8 @@
 }
 
 #navbar h6:hover {
-  background-color: var(--color-dark-white);
-  color: var(--color-black);
+  background-color: var(--color-dark-red);
+  color: var(--color-white);
 }
 
 .selectedNav h6 {
@@ -54,8 +55,8 @@
 }
 
 .selectedNav h6:hover {
-  background-color: var(--color-dark-white) !important;
-  color: var(--color-black);
+  background-color: var(--color-dark-red) !important;
+  color: var(--color-white);
 }
 
 #navbar li {
@@ -68,4 +69,8 @@
 
 .navBtn {
   display: none;
+}
+
+.navbar__menu__item {
+  text-align: center;
 }
