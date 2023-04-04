@@ -13,6 +13,10 @@
     left: 1120px;
   }
 
+  #navbar__menu img {
+    margin-left: 5px;
+  }
+
   // Main
   #main h2 {
     height: 43px;
@@ -64,7 +68,9 @@
   }
 
   .navBtn i {
+    margin-top: 5px;
     cursor: pointer;
+    animation: jump 1s linear infinite alternate;
   }
 
   .navBtn p {
@@ -97,6 +103,28 @@
     position: fixed;
     left: auto;
     right: 20px;
+  }
+
+  @keyframes jump {
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(-10px);}
+    100% { transform: translateY(0px);}
+  }
+  
+  @-moz-keyframes jump { /* Firefox */
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(-10px);}
+    100% { transform: translateY(0px);}
+  }
+  @-webkit-keyframes jump { /* Safari and Chrome */
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(-10px);}
+    100% { transform: translateY(0px);}
+  }
+  @-o-keyframes jump { /* Opera */
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(-10px);}
+    100% { transform: translateY(0px);}
   }
 
 
@@ -149,6 +177,10 @@
     margin-bottom: 60px;
   }
 
+  .navbar__tablet__item h3:hover {
+    font-weight: var(--weight-bold) !important;
+  }
+
   .navbar__tablet__item img {
     width: 200px;
     margin-top: 90px;
@@ -167,6 +199,11 @@
     padding-right: 18px;
   }
 
+  .tablet__social img:hover {
+    width: 70px;
+    height: 70px;
+  }
+
   .closebtnCon {
     display: block;
     text-align: center;
@@ -177,6 +214,8 @@
 
   .closebtnCon i {
     cursor: pointer;
+
+    animation: jump 1s linear infinite alternate;
   }
 
   .closebtnCon p {
