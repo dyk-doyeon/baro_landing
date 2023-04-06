@@ -5,6 +5,7 @@ header("Access-Control-Allow-Origin: *");
 header("Conten-Type: application/json; charset=UTF-8");
 
 if($_POST) {
+    $recipient = "leaustal@gmail.com";
     $subject = "To: Baro Landing";
     $visitor_name="";
     $visitor_email = "";
@@ -51,10 +52,11 @@ if($_POST) {
         array_push($fail, "message");
     }
 //how to change this out and make this work
-$headers = "From: @email.com\r\n"."Reply-to: @email.com\r\n"."X-MAIL: PHP/".phpversion();
+$subject = " From: ".$visitor_name."Email: ".$visitor_email;
+$headers = "From: leaustal@gmail.com\r\n"."Reply-to: leaustal@gmail.com\r\n"."X-MAIL: PHP/".phpversion();
     echo "<script>console.log('Debug Objects: " . $fail . "' );</script>";    
     if(count($fail)==0){
-        mail($visitor_email, $subject, $content, $visitor_date ,$headers);
+        mail($recipient, $visitor_email, $subject, $content, $visitor_date ,$headers);
         $results['message'] = sprintf("Thank you for contacting me, %s. We will respnd within 24 hours.", $visitor_name);
     }else{
         header("HTTP/1.1 488 You Did NOT fill out the form correctly");
