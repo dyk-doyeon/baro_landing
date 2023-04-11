@@ -5,7 +5,7 @@ header("Access-Control-Allow-Origin: *");
 header("Conten-Type: application/json; charset=UTF-8");
 
 if($_POST) {
-    $recipient = "leaustal@gmail.com";
+    $recipient = "Barolanding@gmail.com";
     $subject = "To: Baro Landing";
     $visitor_name="";
     $visitor_email = "";
@@ -53,7 +53,7 @@ if($_POST) {
     }
 //how to change this out and make this work
 $subject = " From: ".$visitor_name."Email: ".$visitor_email;
-$headers = "From: leaustal@gmail.com\r\n"."Reply-to: leaustal@gmail.com\r\n"."X-MAIL: PHP/".phpversion();
+$headers = "From: Barolanding@gmail.com"."\r\n"."Reply-to:".$visitor_email."\r\n"."X-MAIL: PHP/".phpversion();
     echo "<script>console.log('Debug Objects: " . $fail . "' );</script>";    
     if(count($fail)==0){
         mail($recipient, $visitor_email, $subject, $content, $visitor_date ,$headers);

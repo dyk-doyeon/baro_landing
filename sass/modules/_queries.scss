@@ -228,10 +228,11 @@
   // main
   #main h2 {
     position: absolute;
-    left: 28%;
+    left: 50%;
     top: 50px;
     text-align: center;
     margin-top: 120px;
+    transform: translate(-50%,0);
 
     animation-name: topToBottomTB, fadeOut;
     -moz-animation: topToBottomTB, fadeOut; /* Firefox */
@@ -249,12 +250,17 @@
   #main p:last-child {
     display: block;
     width: 520px;
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   .main__bt {
     position: absolute;
-    left: 30%;
+    left: 50%;
     top: 150px;
+    transform: translate(-50%,0);
 
     animation-name: bottomToTopTB, fadeOut;
     -moz-animation: bottomToTopTB, fadeOut; /* Firefox */
@@ -410,13 +416,13 @@
 
 @media screen and (max-width: 1100px) {
   // Landing
-  #main h2 {
-    left: 23%;
-  }
+  // #main h2 {
+  //   left: 23%;
+  // }
 
-  .main__bt {
-    left: 25%;
-  }
+  // .main__bt {
+  //   left: 25%;
+  // }
 
   // Logo 
   #logo {
@@ -512,13 +518,13 @@
 
 @media screen and (max-width: 1000px) {
   // Landing
-  #main h2 {
-    left: 20%;
-  }
+  // #main h2 {
+  //   left: 20%;
+  // }
 
-  .main__bt {
-    left: 23%;
-  }
+  // .main__bt {
+  //   left: 23%;
+  // }
 
   // Why
   #why {
@@ -564,6 +570,7 @@
     position: relative;
     top: -90px;
     left: -150px;
+    
   }
 
   // Introduce 
@@ -609,13 +616,13 @@
 }
 
 @media screen and (max-width: 900px) {
-  #main h2 {
-    left: 18%;
-  }
+  // #main h2 {
+  //   left: 18%;
+  // }
 
-  .main__bt {
-    left: 20%;
-  }
+  // .main__bt {
+  //   left: 20%;
+  // }
 
   #why {
     width: 900px;
@@ -636,13 +643,13 @@
 }
 
 @media screen and (max-width: 800px) {
-  #main h2 {
-    left: 15%;
-  }
+  // #main h2 {
+  //   left: 15%;
+  // }
 
-  .main__bt {
-    left: 18%;
-  }
+  // .main__bt {
+  //   left: 18%;
+  // }
 
   #why {
     width: 800px;
@@ -668,13 +675,13 @@
 }
 
 @media screen and (max-width: 700px) {
-  #main h2 {
-    left: 9%;
-  }
+  // #main h2 {
+  //   left: 9%;
+  // }
 
-  .main__bt {
-    left: 12%;
-  }
+  // .main__bt {
+  //   left: 12%;
+  // }
 
   #why {
     width: 700px;
@@ -714,11 +721,11 @@
 
   #main h2 {
     font-size: var(--font-regular);
-    left: 25%;
+  //   left: 25%;
   }
 
   .main__bt {
-    left: 20%;
+    text-align: center;
   }
 
   .main__logo img {
@@ -840,13 +847,13 @@
     width: 600px;
   }
 
-  #main h2 {
-    left: 22%;
-  }
+  // #main h2 {
+  //   left: 22%;
+  // }
 
-  .main__bt {
-    left: 18%;
-  }
+  // .main__bt {
+  //   left: 18%;
+  // }
 
 
   // About
@@ -933,13 +940,13 @@
     width: 550px;
   }
 
-  #main h2 {
-    left: 20%;
-  }
+  // #main h2 {
+  //   left: 20%;
+  // }
 
-  .main__bt {
-    left: 16%;
-  }
+  // .main__bt {
+  //   left: 16%;
+  // }
 
   // About
   #about {
@@ -1000,13 +1007,13 @@
     width: 500px;
   }
 
-  #main h2 {
-    left: 17%;
-  }
+  // #main h2 {
+  //   left: 17%;
+  // }
 
-  .main__bt {
-    left: 13%;
-  }
+  // .main__bt {
+  //   left: 13%;
+  // }
 
   // About
   #about {
@@ -1060,13 +1067,13 @@
     width: 450px;
   }
 
-  #main h2 {
-    left: 15%;
-  }
+  // #main h2 {
+  //   left: 15%;
+  // }
 
-  .main__bt {
-    left: 18%;
-  }
+  // .main__bt {
+  //   left: 18%;
+  // }
 
   .main__logo img {
     width: 300px;
@@ -1144,13 +1151,13 @@
     width: 400px;
   }
 
-  #main h2 {
-    left: 10%;
-  }
+  // #main h2 {
+  //   left: 10%;
+  // }
 
-  .main__bt {
-    left: 13%;
-  }
+  // .main__bt {
+  //   left: 13%;
+  // }
 
   // About
   #about {
@@ -1204,13 +1211,13 @@
     width: 350px;
   }
 
-  #main h2 {
-    left: 2%;
-  }
+  // #main h2 {
+  //   left: 2%;
+  // }
 
-  .main__bt {
-    left: 7%;
-  }
+  // .main__bt {
+  //   left: 7%;
+  // }
 
   // About
   #about {
@@ -1274,13 +1281,13 @@
     width: 300px;
   }
 
-  #main h2 {
-    left: 0%;
-  }
+  // #main h2 {
+  //   left: 0%;
+  // }
 
-  .main__bt {
-    left: 7%;
-  }
+  // .main__bt {
+  //   left: 7%;
+  // }
 
   .main__logo img {
     width: 250px;
